@@ -14,6 +14,29 @@
   --dairy: #fcfcfc;
 }
 
+/* CSS RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+/* END OF CSS RESET */
+
 /* HTML Body */
 body {
   font-family: "Roboto", sans-serif;
@@ -22,6 +45,13 @@ body {
 }
 
 /* General Styles */
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 .list {
   list-style: none;
@@ -34,6 +64,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-link > span {
@@ -44,11 +75,17 @@ body {
   color: var(--iris);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;
   color: var(--navyblue);
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .benefits .title {
@@ -70,7 +107,7 @@ body {
 
 .contacts-menu .item {
   color: var(--slate);
-  line-height: 1.71;
+  line-height: 1.14;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -105,6 +142,9 @@ body {
   border-color: transparent;
   font-size: 16px;
   border-radius: 4px;
+  padding: 16px 32px;
+  display: block;
+  margin: auto;
 }
 
 .button.primary {
@@ -150,19 +190,82 @@ body {
 .project {
   text-decoration: none;
 }
+
 /* End of General Styles */
 
-/* Header Section */
+/* Header Section for both index and portfolio html */
+
+.page-header {
+  height: 72px;
+  border-bottom: 1px solid var(--cornflower);
+  padding: 25.5px 156px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-menu {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
 
 /* Hero Section */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.04em;
   color: var(--white);
   text-align: center;
+  margin-bottom: 48px;
 }
 
+/* Section 1 */
+
+.benefits {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+/* Section 2 */
+
+.what-we-do {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Section 3 */
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .bg-team {
   background-color: var(--cloud);
 }
@@ -180,7 +283,11 @@ body {
   font-weight: 400;
 }
 
-/* Footer */
+/* Footer for both index and portfolio html*/
+
+.page-footer {
+  padding: 100px 156px;
+}
 .page-footer.bg-footer {
   background-color: var(--navyblue);
 }
@@ -191,4 +298,24 @@ body {
 
 .footer-description {
   color: var(--cloud);
+  margin-top: 17px;
+}
+
+/* Filter Section */
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+/* Project List Section */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }

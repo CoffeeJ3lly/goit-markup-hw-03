@@ -13,41 +13,49 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
     <header class="page-header">
-      <!-- Navigation Bar -->
-      <nav>
-        <a class="logo-link" href="./index.html">
-          <span class="logo">WEB</span>
-          <span class="studio">STUDIO</span>
-        </a>
+      <div class="container header-container">
+        <!-- Navigation Bar -->
+        <nav class="header-nav">
+          <a class="logo-link" href="./index.html">
+            <span class="logo">WEB</span>
+            <span class="studio">STUDIO</span>
+          </a>
 
-        <ul class="nav-menu list">
+          <ul class="nav-menu list">
+            <li>
+              <a class="page current" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="page" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="page" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-menu list">
           <li>
-            <a class="page current" href="./index.html">Studio</a>
+            <a class="item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
+
           <li>
-            <a class="page" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="page" href="#">Contacts</a>
+            <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="contacts-menu list">
-        <li>
-          <a class="item" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-
-        <li>
-          <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -121,7 +129,6 @@
               </a>
             </li>
 
-            <!-- Row 2 Section -->
             <!-- Row 2 Cards -->
             <li>
               <a href="" class="project">
@@ -168,7 +175,6 @@
               </a>
             </li>
 
-            <!-- Row 3 Section -->
             <!-- Row 3 Cards -->
             <li>
               <a href="" class="project">
@@ -219,9 +225,9 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="page-footer bg-footer">
-      <div>
+      <div class="container footer-container">
         <a class="logo-link" href="./index.html">
           <span class="logo">WEB</span>
           <span class="studio-footer">STUDIO</span>
