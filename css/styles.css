@@ -201,12 +201,12 @@ body {
   padding: 25.5px 156px;
 }
 
-.header-container {
+.menu {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
